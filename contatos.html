@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
+
 <body>
-    <ul>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+    </nav>
+    <h1 class="titulo" >Entre em contato conosco !</h1>
+
+    <div class="principal">
         
-        <a href="index.html">Página Principal</a>
+            <form class="formulario" action="">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <textarea name="recado" id="" cols="30" rows="10"></textarea>
+                <button>Enviar</button>
+            </form>
         
-    </ul>
-    <h1>Entre em contato conosco !</h1>
 
-    <label for="nome">Nome:</label><br>
-    <input type="text" name="nome" id="nome"><br><br>
+        <div class="mapa">
+            <h2>Endereço:</h2>
+            <p>Praia do Arpoador</p>
+            <p>Ipanema - RJ</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9578077312294!2d-43.1941139!3d-22.98857895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd51b432fdc95%3A0x721eea5331e0fda1!2sPraia%20do%20Arpoador!5e0!3m2!1spt-BR!2sbr!4v1668102408255!5m2!1spt-BR!2sbr" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 
-    <label for="email">Email:</label><br>
-    <input type="email" name="email" id="email"><br><br>
-
-    <label for="assunto">Assunto:</label><br>
-    <textarea name="" id="" cols="30" rows="10"></textarea><br>
-
-    <h2>Endereço da Empresa:</h2>
-
-    <p>Endereço: Arpoador Ipanema, Rio de Janeiro</p>
-    <p>Rio de Janeiro</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9578077312294!2d-43.1941139!3d-22.98857895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd51b432fdc95%3A0x721eea5331e0fda1!2sPraia%20do%20Arpoador!5e0!3m2!1spt-BR!2sbr!4v1667913911821!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    <footer class="rodape">
+        <div class="links-rodape">
+            <div class="links">
+                <img class="img" src="assets/imgs/gaming.png" alt="" /><a class="link" href="">Serebii</a>
+                <img class="img" src="assets/imgs/gaming.png" alt="" /><a class="link" href="">Pokemon Wiki</a>
+                <img class="img" src="assets/imgs/gaming.png" alt="" /><a class="link" href="">Poke-Dex</a>
+            </div>
+        </div>
+        <div class="links-rodape">
+            <div class="links">
+                <img class="img" src="assets/imgs/pinterest.png" alt="" /><a class="link" href="link">Pinterest</a>
+                <img class="img" src="assets/imgs/instagram.png" alt="" /><a class="link" href="link">Instagram</a>
+                <img class="img" src="assets/imgs/twitter.png" alt="" /><a class="link" href="link">Twitter</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
