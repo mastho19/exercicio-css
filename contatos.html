@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style/style.css"/>
     <title>Document</title>
 </head>
 
@@ -15,22 +15,27 @@
     </nav>
     <h1 class="titulo" >Entre em contato conosco !</h1>
 
-    <div class="principal">
+    <div class="contato-principal">
         
             <form class="formulario" action="">
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome">
+                <div id="nomeErro"></div>
                 <label for="email">Email:</label>
                 <input type="text" name="email" id="email">
-                <textarea name="recado" id="" cols="30" rows="10"></textarea>
-                <button>Enviar</button>
+                <div id="emailErro"></div>
+                <textarea name="recado" id="assunto" cols="30" rows="10"></textarea>
+                <div id="assuntoErro"></div>
+                <button id="botao">Enviar</button>
             </form>
         
 
         <div class="mapa">
-            <h2>Endereço:</h2>
-            <p>Praia do Arpoador</p>
-            <p>Ipanema - RJ</p>
+            <div class="endereco">
+                <h2>Endereço:</h2>
+                <p>Praia do Arpoador</p>
+                <p>Ipanema - RJ</p>
+            </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.9578077312294!2d-43.1941139!3d-22.98857895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd51b432fdc95%3A0x721eea5331e0fda1!2sPraia%20do%20Arpoador!5e0!3m2!1spt-BR!2sbr!4v1668102408255!5m2!1spt-BR!2sbr" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
@@ -51,6 +56,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/assets/javascript/script.js"></script>
 </body>
 
 </html>

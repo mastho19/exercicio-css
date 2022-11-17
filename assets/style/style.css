@@ -6,12 +6,11 @@ body {
 
 .menu {
     display: flex;
+    width: 100vw;
     padding: 20px;
     gap: 20px;
     background-color: blueviolet;
 }
-
-
 
 .menu a {
     text-decoration: none;
@@ -90,7 +89,7 @@ body {
 
 .rodape {
     display: flex;
-    flex-flow: row no;
+    flex-flow: row nowrap;
     justify-content: space-around;
     background-color: blueviolet;
     margin: 0px;
@@ -128,16 +127,29 @@ body {
     place-self: center start;
 }
 
+.contato-principal {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 16px;
+}
+
+
 .formulario {
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 20px;
+    max-width: 400px;
+    color: blueviolet;
 }
 
-.mapa {
+.endereco {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     text-align: center;
     padding: 20px;
+    color: blueviolet;
 }
